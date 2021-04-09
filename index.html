@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+<body>
+<style>
+    #playground
+    {
+        height: 609px;
+        width: 609px;
+
+        margin-left: 300px;
+        /*display: inline-block;*/
+        display: table;
+    }
+
+    .row {
+        float: left;
+    }
+
+    .pixel
+    {
+        height: 200px;
+        width: 200px;
+        border: solid 1px black;
+        border-color: darkolivegreen;
+        background: yellowgreen;
+        color: darkolivegreen;
+
+        display: table-cell;
+        vertical-align: middle;
+
+        font-size: 150px;
+        font-style: normal;
+
+        text-align: center;
+        text-decoration: black;
+    }
+
+    .red {
+        background: lightcoral;
+        color: crimson;
+    }
+</style>
+<div id="playground">
+
+    <div class="row">
+        <div id="1x1" data-x="0" class="pixel"></div>
+        <div id="1x2" data-x="1" class="pixel"></div>
+        <div id="1x3" data-x="2" class="pixel"></div>
+    </div>
+
+    <div class="row">
+        <div id="2x1" data-x="3" class="pixel"></div>
+        <div id="2x2" data-x="4" class="pixel"></div>
+        <div id="2x3" data-x="5" class="pixel"></div>
+    </div>
+
+    <div class="row">
+        <div id="3x1" data-x="6"  class="pixel"></div>
+        <div id="3x2" data-x="7"  class="pixel"></div>
+        <div id="3x3" data-x="8"  class="pixel"></div>
+    </div>
+
+</div>
+<button>
+    Сброс
+</button>
+<script src="script.js"></script>
+</body>
+</html>
